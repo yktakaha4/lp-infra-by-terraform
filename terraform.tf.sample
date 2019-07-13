@@ -1,0 +1,8 @@
+terraform {
+  backend "s3" {
+    bucket  = "(replace to s3_state_bucket_name)"
+    region  = "(replace to region)"
+    key     = "(replace to resource_prefix)/terraform.tfstate"
+    encrypt = true
+  }
+}
